@@ -25,7 +25,7 @@ BLOG_NAME = "bnotw"
 
 regexes = {"<.*?>": "", "&rsquo;": "'", "&lsquo;": "'"}
 
-# helpe functions
+# helper functions
 
 def multiple_replace(patterns, text):
     for pattern, replacement in patterns.items():
