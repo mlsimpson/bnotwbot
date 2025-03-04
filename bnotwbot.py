@@ -199,7 +199,7 @@ def get_searched_post(ack, command, say):
 @app.event("app_mention")
 def handle_mention(event, say):
     """print help to channel"""
-    say("hot damn!\n`/bnotw-add [your text]` to add a new bnotw. make it count!\n`/bnotw-get` to get a random bnotw.")
+    say("hot damn!\n`/bnotw-add [your text]` to add a new bnotw. make it count!\n`/bnotw-get` to get a random bnotw.\n`/bnotw-search [search string] to search for matching bnotws")
 
 
 if __name__ == "__main__":
