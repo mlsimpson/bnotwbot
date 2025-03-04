@@ -63,7 +63,7 @@ def post_to_tumblr(ack, command, say):
     try:
         response = tumblr_client.create_text(BLOG_NAME, state="published", title=text)
 
-        post_url = f"https://www.www.tumblr.com/{BLOG_NAME}/{response['id']}"
+        post_url = f"https://bnotw.tumblr.com/{response['id']}"
         message = {
                 "blocks":[
                     {
@@ -118,7 +118,7 @@ def get_random_post(ack, say):
                     "elements": [
                         {
                             "type": "mrkdwn",
-                            "text": f"<https://www.tumblr.com/${BLOG_NAME}/{post['id']}|view on bnotw.www.tumblr.com> • {post['date']}"
+                            "text": f"<https://bnotw.tumblr.com/{post['id']}|view on bnotw.tumblr.com> • {post['date']}"
                         }
                     ]
                 }
@@ -182,7 +182,7 @@ def get_searched_post(ack, command, say):
                             "elements": [
                                 {
                                     "type": "mrkdwn",
-                                    "text": f"<https://www.tumblr.com/${BLOG_NAME}/{post['id']}|view on bnotw.www.tumblr.com> • {post['date']}"
+                                    "text": f"<https://bnotw.tumblr.com/{post['id']}|view on bnotw.tumblr.com> • {post['date']}"
                                 }
                             ]
                         }
