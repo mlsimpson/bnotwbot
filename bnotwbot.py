@@ -73,7 +73,7 @@ def post_to_tumblr(ack, command, say):
                             "text": f"<@{user_id}> added '<{post_url}|{text}>'"
                         }
                     }
-                
+
                 ]
         }
 
@@ -118,7 +118,7 @@ def get_random_post(ack, say):
                     "elements": [
                         {
                             "type": "mrkdwn",
-                            "text": f"<https://bno.tw/{post['id']}|view on bno.tw> • {post['date']}"
+                            "text": f"<https://tumblr.com/${BLOG_NAME}/{post['id']}|view on bnotw.tumblr.com> • {post['date']}"
                         }
                     ]
                 }
@@ -182,7 +182,7 @@ def get_searched_post(ack, command, say):
                             "elements": [
                                 {
                                     "type": "mrkdwn",
-                                    "text": f"<https://bno.tw/{post['id']}|view on bno.tw> • {post['date']}"
+                                    "text": f"<https://tumblr.com/${BLOG_NAME}/{post['id']}|view on bnotw.tumblr.com> • {post['date']}"
                                 }
                             ]
                         }
