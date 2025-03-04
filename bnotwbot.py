@@ -54,7 +54,6 @@ def post_to_tumblr(ack, command, say):
     ack()
 
     user_id = command['user_id']
-
     text = command['text']
 
     if not text:
