@@ -110,7 +110,7 @@ def get_random_post(ack, say):
                     "type": "section",
                     "text": {
                         "type": "mrkdwn",
-                        "text": f"bnotw: {content}"
+                        "text": f"{content}"
                     }
                 },
                 {
@@ -174,7 +174,7 @@ def get_searched_post(ack, command, say):
                             "type": "section",
                             "text": {
                                 "type": "mrkdwn",
-                                "text": f"bnotw: {bnotw}"
+                                "text": f"{bnotw}"
                             }
                         },
                         {
