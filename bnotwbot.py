@@ -489,4 +489,3 @@ if __name__ == "__main__":
     handler = SocketModeHandler(app, os.environ.get("SLACK_APP_TOKEN"))
     print("bnotwbot is alive!")
     handler.start()
-
