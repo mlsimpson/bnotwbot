@@ -5,7 +5,7 @@ bnotwbot — Slack bot for bnotw Tumblr blog + acronym game.
 Setup:
   `pip install slack-bolt pytumblr python-dotenv`
 
-Required environment variables:
+Required environment variables:\
   `SLACK_BOT_TOKEN`         — Bot token (xoxb-...)\
   `SLACK_APP_TOKEN`         — App-level token for Socket Mode (xapp-...)\
   `TUMBLR_CONSUMER_KEY`\
