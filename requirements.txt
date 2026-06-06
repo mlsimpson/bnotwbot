@@ -1,0 +1,13 @@
+certifi==2025.1.31
+charset-normalizer==3.4.1
+dotenv==0.9.9
+future==1.0.0
+idna==3.10
+oauthlib==3.2.2
+python-dotenv==1.0.1
+pytumblr==0.1.2
+requests==2.32.3
+requests-oauthlib==2.0.0
+slack-bolt==1.22.0
+slack-sdk==3.34.0
+urllib3==2.3.0
