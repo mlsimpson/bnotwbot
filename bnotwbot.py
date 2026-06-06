@@ -44,6 +44,11 @@ tumblr_client = pytumblr.TumblrRestClient(
     os.environ.get("TUMBLR_OAUTH_SECRET")
 )
 
+# ── Constants ──────────────────────────────────────────────────────────────────
+
+BLOG_NAME = "bnotw"
+LIMIT = 50
+
 SUBMISSION_WINDOW = 60   # seconds players have to submit an acronym
 VOTING_WINDOW     = 20   # seconds players have to vote
 LEADERBOARD_FILE  = "acro_leaderboard.json"
@@ -84,11 +89,6 @@ def leaderboard_text() -> str:
     for i, entry in enumerate(ranked, 1):
         lines.append(f"{i}. {entry['name']} — {entry['wins']} win(s)")
     return "\n".join(lines)
-
-# ── Constants ──────────────────────────────────────────────────────────────────
-
-BLOG_NAME = "bnotw"
-LIMIT = 50
 
 # ── Tumblr helpers ─────────────────────────────────────────────────────────────
 
