@@ -22,7 +22,6 @@ Slack app configuration (at api.slack.com/apps):
   - Subscribe to bot events: message.im, message.channels, message.groups,
                               app_mention
 """
-from __future__ import annotations
 
 import json
 import os
