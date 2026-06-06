@@ -1,9 +1,7 @@
 # bnotwbot
-slack bot for interacting with https://bno.tw
-
-## Instructions
 bnotwbot — Slack bot for bnotw Tumblr blog + acronym game.
 
+## Instructions
 Setup:
   `pip install slack-bolt pytumblr python-dotenv`
 
