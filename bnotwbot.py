@@ -56,6 +56,15 @@ LEADERBOARD_FILE  = "acro_leaderboard.json"
 # Consonant-heavy pool so acronyms feel "real"
 LETTER_POOL = list("BCDFGHJKLMNPQRSTVWXYZ") * 2 + list("AEIOU")
 
+HELP_TEXT = (
+    "hot damn!\n\n"
+    "`/acro` — start a game of Acronyms Against Humanity"
+    "`/bnotw add <text>` — add a new bnotw. make it count!\n"
+    "`/bnotw random` — get a random bnotw\n"
+    "`/bnotw search <query>` — search for matching bnotws\n"
+    "`/bnotw help` — show this message\n"
+)
+
 # ── App init ───────────────────────────────────────────────────────────────────
 
 app = App(token=os.environ["SLACK_BOT_TOKEN"])
@@ -287,7 +296,6 @@ def end_submission_phase():
         game._timer = threading.Timer(VOTING_WINDOW, end_voting_phase)
         game._timer.start()
 
-
 def end_voting_phase():
     channel = game.channel
     result  = game.tally_winner()
@@ -392,15 +400,6 @@ def handle_message(message, say):
             say(f"<@{user_id}> You can't vote for your own submission! 😄")
 
 # ── Slash command: /bnotw ──────────────────────────────────────────────────────
-
-HELP_TEXT = (
-    "hot damn!\n\n"
-    "`/bnotw add <text>` — add a new bnotw. make it count!\n"
-    "`/bnotw random` — get a random bnotw\n"
-    "`/bnotw search <query>` — search for matching bnotws\n"
-    "`/bnotw help` — show this message\n"
-    "`/acro` — start a game of Acronyms Against Humanity"
-)
 
 def bnotw_add(user_id: str, text: str, say, error_fn):
     if not text:
