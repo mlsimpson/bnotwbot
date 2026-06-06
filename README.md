@@ -16,20 +16,20 @@ Required environment variables:
 Slack app configuration (at [api.slack.com/apps](https://api.slack.com/apps)):
   - Enable Socket Mode
   - Add slash commands: 
-        - /bnotw
-        - /acro
+      - /bnotw
+      - /acro
   - Bot Token Scopes:
-        - commands
-        - chat:write
-        - im:history
-        - channels:history
-        - groups:history
-        - app_mentions:read
+      - commands
+      - chat:write
+      - im:history
+      - channels:history
+      - groups:history
+      - app_mentions:read
   - Subscribe to bot events:
-        - message.im
-        - message.channels
-        - message.groups
-        - app_mention
+      - message.im
+      - message.channels
+      - message.groups
+      - app_mention
 
 ## Usage
   `/acro` — start a game of Acronyms Against Humanity
