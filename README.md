@@ -32,7 +32,7 @@ Slack app configuration (at [api.slack.com/apps](https://api.slack.com/apps)):
       - app_mention
 
 ## Usage
-  `/acro` — start a game of Acronyms Against Humanity\
+  `/acro` — start a game of Acronyms Against Humanity
 
   `/bnotw add <text>` — add a new bnotw. make it count!\
   `/bnotw random` — get a random bnotw\
