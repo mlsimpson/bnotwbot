@@ -13,7 +13,7 @@ Required environment variables:
   - TUMBLR_OAUTH_TOKEN
   - TUMBLR_OAUTH_SECRET
 
-Slack app configuration (at [api.slack.com/apps](api.slack.com/apps)):
+Slack app configuration (at [api.slack.com/apps](https://api.slack.com/apps)):
   - Enable Socket Mode
   - Add slash commands: /bnotw, /acro  (no Request URL needed)
   - Bot Token Scopes: commands, chat:write, im:history,
