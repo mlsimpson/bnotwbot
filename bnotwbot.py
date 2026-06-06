@@ -50,7 +50,7 @@ BLOG_NAME = "bnotw"
 LIMIT = 50
 
 SUBMISSION_WINDOW = 60   # seconds players have to submit an acronym
-VOTING_WINDOW     = 20   # seconds players have to vote
+VOTING_WINDOW     = 30   # seconds players have to vote
 LEADERBOARD_FILE  = "acro_leaderboard.json"
 
 # Consonant-heavy pool so acronyms feel "real"
