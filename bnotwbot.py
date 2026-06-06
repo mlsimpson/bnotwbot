@@ -61,11 +61,11 @@ LETTER_POOL = list("BCDFGHJKLMNPQRSTVWXYZ") * 2 + list("AEIOU")
 
 HELP_TEXT = (
     "hot damn!\n\n"
-    "`/acro` — start a game of Acronyms Against Humanity"
+    "`/acro` — start a game of Acronyms Against Humanity\n"
     "`/bnotw add <text>` — add a new bnotw. make it count!\n"
     "`/bnotw random` — get a random bnotw\n"
     "`/bnotw search <query>` — search for matching bnotws\n"
-    "`/bnotw help` — show this message\n"
+    "`/bnotw help` — show this message"
 )
 
 # ── App init ───────────────────────────────────────────────────────────────────
