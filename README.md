@@ -6,12 +6,12 @@ Setup:
   `pip install slack-bolt pytumblr python-dotenv`
 
 Required environment variables:
-  SLACK_BOT_TOKEN         — Bot token (xoxb-...)
-  SLACK_APP_TOKEN         — App-level token for Socket Mode (xapp-...)
-  TUMBLR_CONSUMER_KEY
-  TUMBLR_CONSUMER_SECRET
-  TUMBLR_OAUTH_TOKEN
-  TUMBLR_OAUTH_SECRET
+  - SLACK_BOT_TOKEN         — Bot token (xoxb-...)
+  - SLACK_APP_TOKEN         — App-level token for Socket Mode (xapp-...)
+  - TUMBLR_CONSUMER_KEY
+  - TUMBLR_CONSUMER_SECRET
+  - TUMBLR_OAUTH_TOKEN
+  - TUMBLR_OAUTH_SECRET
 
 Slack app configuration (at api.slack.com/apps):
   - Enable Socket Mode
